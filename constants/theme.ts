@@ -5,8 +5,9 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// SoundMate Orange-Black Theme
+const tintColorLight = '#FF6B35'; // Vibrant Orange
+const tintColorDark = '#FF6B35';
 
 export const Colors = {
   light: {
@@ -19,11 +20,54 @@ export const Colors = {
   },
   dark: {
     text: '#ECEDEE',
-    background: '#151718',
+    background: '#0D0D0D',
     tint: tintColorDark,
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
+  },
+};
+
+// SoundMate Brand Colors
+export const SoundMateColors = {
+  // Primary - Vibrant Orange
+  primary: '#FF6B35',
+  primaryDark: '#E55A2B',
+  primaryLight: '#FF8A5C',
+
+  // Accent - Golden Orange
+  accent: '#FFB347',
+  accentDark: '#E5A23F',
+  accentLight: '#FFCC80',
+
+  // Background - Deep Blacks
+  background: '#0D0D0D',
+  surface: '#1A1A1A',
+  surfaceLight: '#2D2D2D',
+  surfaceElevated: '#3D3D3D',
+
+  // Text
+  textPrimary: '#FFFFFF',
+  textSecondary: '#9CA3AF',
+  textMuted: '#6B7280',
+  textInverse: '#0D0D0D',
+
+  // Borders
+  border: '#374151',
+  borderLight: '#4B5563',
+
+  // Status
+  success: '#10B981',
+  warning: '#F59E0B',
+  error: '#EF4444',
+  info: '#3B82F6',
+
+  // Gradients
+  gradient: {
+    orange: ['#FF6B35', '#E55A2B'],
+    orangeLight: ['#FF8A5C', '#FF6B35'],
+    orangeGold: ['#FF6B35', '#FFB347'],
+    dark: ['#0D0D0D', '#1A1A1A', '#0D0D0D'],
   },
 };
 
