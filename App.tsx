@@ -1,9 +1,9 @@
 import { registerRootComponent } from 'expo';
 import React, { useCallback, useState } from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { SoundMateColors } from './constants/theme';
-import { LoginScreen, OTPScreen, RegisterScreen } from './src/pages';
+import { HomeScreen, LoginScreen, OTPScreen, RegisterScreen } from './src/pages';
 
 // Define screens enum
 enum Screen {
@@ -56,12 +56,7 @@ function App() {
                     />
                 );
             case Screen.HOME:
-                // TODO: Implement HomeScreen
-                return (
-                    <View style={styles.placeholder}>
-                        {/* Placeholder for Home Screen */}
-                    </View>
-                );
+                return <HomeScreen />;
             case Screen.REGISTER:
                 return (
                     <RegisterScreen
